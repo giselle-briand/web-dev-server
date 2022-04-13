@@ -8,6 +8,7 @@ import mongoose from "mongoose";
 
 const CONNECTION_STRING = 'mongodb+srv://gisellebriand:thisisthepassword@cluster0.b64ul.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
     || 'mongodb://localhost:27017/webdev'
+
 mongoose.connect(CONNECTION_STRING);
 
 const app = express();
