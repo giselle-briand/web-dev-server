@@ -20,7 +20,6 @@ const createTuit = async (req, res) => {
     newTuit["avatar-image"] = "../media/profileimage.jpg";
     const insertedTuit = await tuitsDao.createTuit(newTuit);
     res.json(insertedTuit);
-
 }
 
 const deleteTuit = async (req, res) => {
