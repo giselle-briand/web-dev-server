@@ -6,7 +6,9 @@ import tuitsController from "./controllers/tuits-controller.js";
 import welcomeController from "./controllers/welcome-controller.js";
 import mongoose from "mongoose";
 
-mongoose.connect('mongodb://localhost:27017/webdev');
+const CONNECTION_STRING = 'mongodb+srv://gisellebriand:thisisthepassword@cluster0.b64ul.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    || 'mongodb://localhost:27017/webdev'
+mongoose.connect(CONNECTION_STRING);
 
 const app = express();
 app.use(cors());
